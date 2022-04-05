@@ -1,3 +1,4 @@
+
 package com.bbd;
 
 import java.util.Iterator;
@@ -45,12 +46,8 @@ public class Assignment4 {
 			a1.moveToElement(driver.findElement(By.cssSelector("[class='discount-list'] li:nth-child(2)"))).click().build()
 					.perform();
 			Thread.sleep(2000);
-			// Verify Range
-			a1.moveToElement(driver.findElement(By.cssSelector("[class='Range'] li:nth-child(2)"))).click().build()
-					.perform();
-			Thread.sleep(2000);
 			// Selecting Product
-			a1.moveToElement(driver.findElement(By.xpath("//ul[@class=\"results-base\"]/li[1]//img[@class=\"img-responsive\"]"))).click().build().perform();
+			a1.moveToElement(driver.findElement(By.xpath("//img[@title='Puma Men Yellow & Black Essentials Brand Logo Printed Pure Cotton T-shirt']"))).click().build().perform();
 			Thread.sleep(3000);
 			//Getting Windows Id for Multiple Tabs
 			Set<String> handles=driver.getWindowHandles();
@@ -71,8 +68,7 @@ public class Assignment4 {
 			driver.findElement(By.xpath("//button[@class='inlinebuttonV2-base-actionButton bulkActionStrip-desktopBulkWishlist']")).click();
 			
 			
-			driver.quit();
-		}
+			driver.quit();		}
 		
 		
 		}
