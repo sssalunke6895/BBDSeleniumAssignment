@@ -28,7 +28,7 @@ public class Assignment3 {
 			//driver.close();
 			//driver.quit();
 		//}
-		List<WebElement> links = driver.findElements(By.xpath("(//li[@class=icon-find]//a"));
+		List<WebElement> links = driver.findElements(By.xpath("(//li[@class=icon-find])//a"));
 		int size = links.size();
 		System.out.println("Total Number of Links : " + size);
 		for (int i = 0; i < size; i++) {
