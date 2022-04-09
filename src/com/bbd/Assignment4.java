@@ -31,7 +31,7 @@ public class Assignment4 {
 			// Verify Category
 			WebElement category = driver.findElement(By.xpath("//a[contains(text(),'T-Shirts')]"));
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			//Click on sort by and choose What’s new
+			//Click on sort by and choose Whatâ€™s new
 			js.executeScript("arguments[0].click()", category);
 			Actions a1 = new Actions(driver);
 			a1.moveToElement(driver.findElement(By.xpath("//div[@class='sort-sortBy']"))).build().perform();
@@ -65,13 +65,18 @@ public class Assignment4 {
 			//Verify Move to WishList
 			Thread.sleep(3000);
 			
+			driver.findElement(By.xpath("//*[@id=\"cartItemsList\"]/div/div/div/div/div[1]/div/div[1]")).click();
 			driver.findElement(By.xpath("//button[@class='inlinebuttonV2-base-actionButton bulkActionStrip-desktopBulkWishlist']")).click();
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id=\"appContent\"]/div/div/div/div/div[1]/div[5]/div[4]/div/div/div[2]/div[2]/button")).click();
+			Thread.sleep(2000);
 			
 			
-			driver.quit();		}
+			driver.quit();		
+			}
 		
 		
-		}
+	}
 
 
 
